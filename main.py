@@ -1,10 +1,9 @@
-```python
 from fastapi import FastAPI, Request
 import requests
 
 app = FastAPI()
 
-# 🔥 URL CLOUD RUN CỦA BẠN
+# URL CLOUD RUN CỦA BẠN
 CLOUD_URL = "https://smart-door-api-234169991545.asia-southeast1.run.app/recognize-esp32"
 
 # =============================
@@ -41,4 +40,3 @@ async def proxy_recognize(request: Request):
 @app.get("/")
 def root():
     return {"status": "render proxy running"}
-```
